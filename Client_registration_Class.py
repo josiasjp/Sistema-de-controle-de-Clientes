@@ -30,4 +30,4 @@ class Client():
     
     def GenClientDocumentFolder(self):
         directory_name_folder = self.client_id
-        os.makedirs(f'./PersonalClientFolder/{self.client_id}')
+        os.makedirs(f'./PersonalClientsFolder/{self.client_id}')
