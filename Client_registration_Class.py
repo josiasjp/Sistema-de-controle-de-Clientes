@@ -1,5 +1,6 @@
 from datetime import date
 from random import randrange
+import os
 
 class Client():
     def __init(self, id, Name, Cpf, Birth_Date_day, Birth_Date_month, Birth_Date_year, Gender, Road, Number, CEP, District, State):
@@ -24,6 +25,9 @@ class Client():
     def GenUserId():
         gen_code_date = date.today()
         #encontrar outro meio para realizar a geração do id para que não tenha repetições que podem causar erros futuros
-        client_id = '{}.{}.{}'.format(gen_code_date.year,gen_code_date.month,randrange(10000,99999))
+        client_id = '{}{}{}'.format(gen_code_date.year,gen_code_date.month,randrange(10000,99999))
         return client_id
     
+    def GenClientDocumentFolder(self):
+        directory_name_folder = self.client_id
+        os.makedirs(f'./PersonalClientFolder/{self.client_id}')
