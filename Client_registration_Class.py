@@ -1,5 +1,5 @@
 from datetime import date
-import random
+from random import randrange
 
 class Client():
     def __init(self, id, Name, Cpf, Birth_Date_day, Birth_Date_month, Birth_Date_year, Gender, Road, Number, CEP, District, State):
@@ -20,3 +20,9 @@ class Client():
         else:
             self.client_cpf = '000.000.000-00'
             return False
+    
+    def GenUserId():
+        gen_code_date = date.today()
+        client_id = '{}.{}.{}'.format(gen_code_date.year,gen_code_date.month,randrange(1,10000))
+        return client_id
+    
