@@ -23,6 +23,7 @@ class Client():
     
     def GenUserId():
         gen_code_date = date.today()
-        client_id = '{}.{}.{}'.format(gen_code_date.year,gen_code_date.month,randrange(1,10000))
+        #encontrar outro meio para realizar a geração do id para que não tenha repetições que podem causar erros futuros
+        client_id = '{}.{}.{}'.format(gen_code_date.year,gen_code_date.month,randrange(10000,99999))
         return client_id
     
