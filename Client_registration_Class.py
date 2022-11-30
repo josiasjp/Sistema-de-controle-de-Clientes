@@ -11,7 +11,6 @@ class Client():
         self.client_address = {"Hroad":Road,"Hnumber":Number, "Hcep":CEP, "Hdistrict":District, "Hstate":State}
         self.client_phone_num = {"country_code": phone_country_code, "ddd": phone_ddd, "num":phone_number}
     
-    
     def CpfAutentication(self):
         if len(self.client_cpf) == 11:
             self.client_cpf = self.client_cpf.zfill(11)
