@@ -3,12 +3,13 @@ from random import randrange
 import os
 
 class Client():
-    def __init(self, id, Name, Cpf, Birth_Date_day, Birth_Date_month, Birth_Date_year, Gender, Road, Number, CEP, District, State):
+    def __init(self, id, Name, Cpf, Birth_Date_day, Birth_Date_month, Birth_Date_year, Gender, Road, adress_Number, adress_CEP, adress_District, adress_State,phone_country_code, phone_ddd, phone_number):
         self.client_id = id
         self.client_name = str(Name.upper())
         self.client_birth_date = date(Birth_Date_year, Birth_Date_month,Birth_Date_day)
         self.client_gender = Gender
-        self.client_address = {Road,Number, CEP, District, State}
+        self.client_address = {"road":Road,"residence_number":adress_Number, "road_cep":adress_CEP, "district":adress_District, "state":adress_State}
+        self.client_phone_number ={"country_code":phone_country_code, "ddd": phone_ddd, "number":phone_number } 
     
     def TipeVerify():
         return 0
