@@ -15,11 +15,11 @@ class Client():
         return 0
     
     def CpfAutentication(self):
-        if len(self.client_cpf) < 11:
+        if len(self.client_cpf) == 11:
             self.client_cpf = self.client_cpf.zfill(11)
             self.client_cpf = '{}.{}.{}-{}'.format(self.client_cpf[:3], self.client_cpf[3:6], self.client_cpf[6:9], self.client_cpf[9:])
             return True
-        else:
+        elif len(self.client_cpf)  <= 10 or len(self.client_cpf) >= 12:
             self.client_cpf = '000.000.000-00'
             return False
     

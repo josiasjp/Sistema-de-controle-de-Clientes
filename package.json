@@ -1,0 +1,20 @@
+{
+  "name": "sistema-de-controle-de-clientes",
+  "version": "1.0.0",
+  "description": "Criação de um pequeno sistema de Controle de Clientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josiasjp/Sistema-de-controle-de-Clientes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josiasjp/Sistema-de-controle-de-Clientes/issues"
+  },
+  "homepage": "https://github.com/josiasjp/Sistema-de-controle-de-Clientes#readme"
+}
