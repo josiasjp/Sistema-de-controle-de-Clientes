@@ -2,8 +2,9 @@
   "name": "sistema-de-controle-de-clientes",
   "version": "1.0.0",
   "description": "Criação de um pequeno sistema de Controle de Clientes",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
+    "start":"electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
